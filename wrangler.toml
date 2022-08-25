@@ -1,5 +1,5 @@
 name = "json-path-do"
 account_id = "b6641681fe423910342b9ffa1364c76d"
-route = { pattern = "json.path.do/*", zone_id = "610c7d50a0eb08ba67af06925613f507" }
+route = { pattern = "json.path.do/*", zone_id = "e487bb5c0efb7e96e7f4272cf217f542" }
 main = "worker.js"
 compatibility_date = "2022-08-23"
