@@ -54,3 +54,82 @@ The authors of all books in the store: `$.store.book[*].author`
   "J. R. R. Tolkien"
 ]
 ```
+
+All authors: `$..author`
+
+<https://json.path.do/$..author/json.fyi/books.json>
+
+```json
+[
+  "Nigel Rees",
+  "Evelyn Waugh",
+  "Herman Melville",
+  "J. R. R. Tolkien"
+]
+```
+
+All things in store, which are its books (a book array) and a red bicycle (a bicycle object): `$.store.*`
+
+<https://json.path.do/$.store.*/json.fyi/books.json>
+
+```json
+[
+  "Nigel Rees",
+  "Evelyn Waugh",
+  "Herman Melville",
+  "J. R. R. Tolkien"
+]
+```
+
+The price of everything in the store: `$.store..price`
+
+<https://json.path.do/$.store..price/json.fyi/books.json>
+
+```json
+[
+  "Nigel Rees",
+  "Evelyn Waugh",
+  "Herman Melville",
+  "J. R. R. Tolkien"
+]
+```
+
+The third book (book object): `$..book[2]`
+
+<https://json.path.do/$..book[2]/json.fyi/books.json>
+
+```json
+[
+  "Nigel Rees",
+  "Evelyn Waugh",
+  "Herman Melville",
+  "J. R. R. Tolkien"
+]
+```
+
+The last book in order: `$..book[(@.length-1)]` or `$..book[-1:]`
+
+<https://json.path.do/$..book[-1:]/json.fyi/books.json>
+
+```json
+[
+  "Nigel Rees",
+  "Evelyn Waugh",
+  "Herman Melville",
+  "J. R. R. Tolkien"
+]
+```
+
+The first two books: `$..book[0,1]` or `$..book[:2]`
+
+<https://json.path.do/$..book[:2]/json.fyi/books.json>
+
+```json
+[
+  "Nigel Rees",
+  "Evelyn Waugh",
+  "Herman Melville",
+  "J. R. R. Tolkien"
+]
+```
+
