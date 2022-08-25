@@ -41,5 +41,13 @@ Dynamic JSON Path Transformations
   }
 }
 ```
-
+The authors of all books in the store: `$.store.book[*].author`
 <https://json.path.do/$.store.book[*].author/json.fyi/books.json>
+```json
+[
+  "Nigel Rees",
+  "Evelyn Waugh",
+  "Herman Melville",
+  "J. R. R. Tolkien"
+]
+```
